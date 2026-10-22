@@ -58,7 +58,7 @@ By the end of this session, you will be able to:
 | Resource | What You'll Get |
 |----------|-----------------|
 | **[Session Recording](https://aka.ms/ft27/brk240/youtube)** | A recording of session BRK240 by the session creator |
-| Slides: **[English](https://aka.ms/ft27/brk240/slides/en)** | Session slides for BRK240. More languages coming soon! |
+| Slides: **[English](https://aka.ms/ft27/brk240/slides/en)** \| **[German](https://aka.ms/ft27/brk240/slides/de)** | Session slides for BRK240 |
 | **[Microsoft IQ](https://aka.ms/microsoft-iq)** | The unified intelligence platform for enterprise AI |
 | **[Microsoft IQ Series](https://aka.ms/iq-series)** | Hands-on series going deeper on Foundry IQ, Fabric IQ, Work IQ, and Web IQ |
 | **[Microsoft Learn](https://learn.microsoft.com)** | Official documentation and guided learning paths |
