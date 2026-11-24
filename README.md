@@ -49,7 +49,7 @@ By the end of this session, you will be able to:
 
 - [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/) — hosted agents (Responses API)
 - [Microsoft IQ](https://aka.ms/microsoft-iq) — Foundry IQ, Fabric IQ, Work IQ, Web IQ
-- [Microsoft Agent 365](https://aka.ms/agent365) — identity & governance for agents with identity
+- [Microsoft Agent 365](https://aka.ms/agent365) — agent identity & governance
 - [Microsoft Fabric](https://learn.microsoft.com/fabric/) — data agent + OneLake
 - [Azure Developer CLI (`azd`)](https://learn.microsoft.com/azure/developer/azure-developer-cli/)
 

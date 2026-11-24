@@ -3,7 +3,7 @@
 The hosted agent is built and created by the **deploy** step
 (`scripts/post-provision.ps1`, run by `azd provision`). These scripts perform the
 separate **Agent 365 registration** on top of the already-deployed agent, so it
-shows up in the **Agent 365 registry** and can be hired as an agent with identity in
+shows up in the **Agent 365 registry** and can be hired in
 Microsoft Teams. This mirrors the iqdeepdive agent's `infra/a365` flow.
 
 ## Model: auto-create blueprint

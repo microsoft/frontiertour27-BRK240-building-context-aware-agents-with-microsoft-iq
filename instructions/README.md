@@ -1,6 +1,6 @@
-# Attendee instructions — Caldova Supply Agent with identity
+# Attendee instructions — Caldova Supply Agent
 
-Step-by-step guidance to build, deploy, and explore the **Caldova Supply Agent with identity**:
+Step-by-step guidance to build, deploy, and explore the **Caldova Supply Agent**:
 a context-aware **agent with identity**, governed by **Agent 365** and grounded across all four Microsoft IQs.
 
 > Prefer to follow the live session? These same steps back the on-stage demos in

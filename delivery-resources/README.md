@@ -62,7 +62,7 @@ Two agents over one set of Microsoft IQ connections:
   Microsoft Foundry portal Playground. All four IQs come through **one Foundry toolbox**
   (`caldova-supply-tools`) that Microsoft Foundry runs with **auth passthrough**, so
   Fabric IQ and Work IQ resolve as the **signed-in user**.
-- **Agent with identity**, governed by Agent 365 (`caldova-supply-autopilot`) — used in **demo 5** in Microsoft Teams.
+- **Caldova Supply Agent** (`caldova-supply-autopilot`) — used in **demo 5** in Microsoft Teams.
   It is a governed agent with its own Agent 365 identity and its own mailbox. You manage it in
   the Microsoft 365 admin center, and it works under its own identity, not yours.
 
@@ -74,7 +74,7 @@ Two agents over one set of Microsoft IQ connections:
   **Contributor + User Access Administrator**).
 - A **Microsoft 365 tenant** with **Agent 365** and **Microsoft 365 Copilot** licenses, enrolled
   in the [Frontier preview program](https://adoption.microsoft.com/en-us/copilot/frontier-program/).
-  Demo 5 also needs a **Global Administrator** in that tenant to publish and approve the agent with identity.
+  Demo 5 also needs a **Global Administrator** in that tenant to publish and approve the agent.
 - A **Web IQ** private-preview key — Web IQ is not generally available yet.
 
 **Tools** (install these first)
@@ -104,14 +104,14 @@ azd up
 
 This provisions the Azure resources (Microsoft Foundry, Container Registry, Azure AI Search,
 and a Fabric capacity), then builds the rest: the Fabric data, the four Microsoft IQ
-connections, the toolbox, the Foundry Hosted Agent, the agent with identity, and the demo emails.
+connections, the toolbox, both agents, and the demo emails.
 
 > **If an ontology question hangs (~5 minutes) and fails**, refresh the ontology graph:
 > run [`../infra/scripts/refresh-ontology-graph.py`](../infra/scripts/refresh-ontology-graph.py)
 > (or in the portal, open the `…_graph` item → **… → Schedule → Refresh now**), then re-run
 > the Data Agent step. See [`../docs/ontology.md`](../docs/ontology.md).
 
-### 2. Finish the agent with identity (admin-gated, demo 5)
+### 2. Finish setting up the agent (admin-gated, demo 5)
 
 `azd up` builds the agent's container + version; the **Agent 365 registration** is a
 separate admin step. As a **Global Administrator**: run
@@ -121,7 +121,7 @@ blueprint in the admin center, and **hire an instance in Microsoft Teams**. Full
 
 ### 3. Seed the demo mailboxes
 
-`azd up` seeds **your** mailbox. Seed the **agent's** mailbox after the agent with identity is hired:
+`azd up` seeds **your** mailbox. Seed the **agent's** mailbox after the agent is hired:
 
 - **Your** mailbox (demo 4): **Priya Nair — SHP-9021 (Brightline Labs)**.
 - **The agent's** mailbox (demo 5): **Maria Garcia — SHP-1234 (Alvexa)** — run
@@ -133,7 +133,7 @@ blueprint in the admin center, and **hire an instance in Microsoft Teams**. Full
 - All four IQ connections healthy in the Foundry project.
 - **Warm up Fabric IQ — both sources**: ask one OTIF question *and* one ontology question
   (e.g. "Which medicinal products contain Caldovexine?") so neither cold-starts on stage.
-- Hosted agent reachable in the Playground; agent with identity hired and responding in Microsoft Teams.
+- Hosted agent reachable in the Playground; Caldova Supply Agent hired and responding in Microsoft Teams.
 - After any redeploy, retire the old agent version so the Playground and Microsoft Teams roll to `@latest`.
 
 ## Support

@@ -2,8 +2,8 @@
 
 A **self-contained Foundry Hosted Agent** for the Caldova supplier-assurance
 scenario, built to be **demoed live in the Microsoft Foundry portal** (Agents list +
-Playground). It is deliberately kept separate from the **agent with identity** in
-Microsoft Teams, governed by Agent 365, in [`../autopilot`](../autopilot) so the two never mix. It is deployed
+Playground). It is deliberately kept separate from the **Caldova Supply Agent** in
+Microsoft Teams ([`../autopilot`](../autopilot)), which is governed by Agent 365. It is deployed
 **into the same Microsoft Foundry project as its four Microsoft IQ connections**
 (`4iq-foundry-project`), so each Microsoft IQ tool call is visible in the **Traces**
 tab.
@@ -15,10 +15,10 @@ tab.
 | Surface | **Microsoft Foundry portal Playground** | Microsoft Teams |
 | Microsoft IQ | **All 4** (Web IQ, Foundry IQ, Fabric IQ, Work IQ) | All 4 |
 | Hired into Teams? | **No** (stays a Foundry Hosted Agent in the portal) | Yes |
-| Use in the talk | Demos 1 & 2 (grounding + Fabric in the portal) | Demo 3 (governed agent with identity in Microsoft Teams) |
+| Use in the talk | Demos 1 & 2 (grounding + Fabric in the portal) | Demo 3 (governed agent in Microsoft Teams) |
 
 Because it is **never hired into Teams**, its inline **Playground stays enabled** —
-which is exactly what the agent with identity cannot offer once it is published to Microsoft Teams.
+which is exactly what the Microsoft Teams agent cannot offer once it is published.
 
 ## Microsoft IQ coverage and identity — all four IQs, real data
 
@@ -75,7 +75,7 @@ The four IQs are attached as Foundry **hosted tools**:
 
 ## Deploy
 
-Prereqs: `az login`, the repo's agent with identity already provisioned (so its azd env holds
+Prereqs: `az login`, the Caldova Supply Agent already provisioned (so its azd env holds
 the account / ACR / IQ connection ids), and the Fabric workspace GUID behind the
 Caldova Fabric Data Agent.
 
@@ -94,12 +94,12 @@ cd src/foundry-hosted-agent
 This builds the image, creates the `caldova-supply-hosted-agent` agent, and configures
 **agentic OBO** so the agent authenticates as the provisioned agent-user — making all
 four IQs return real data. The OBO identities default to those provisioned for the Caldova
-agent with identity (blueprint / ServiceIdentity / agent-user), so the standalone
+Supply Agent (blueprint / ServiceIdentity / agent-user), so the standalone
 agent reuses the same real mailbox + Fabric access without a separate hire.
 
 > Deploy is script-based (not `azd up`) because the `azure.ai.agents` azd extension
 > is pinned to an incompatible preview in this environment — the same reason the
-> agent with identity uses REST scripts. When the extension is compatible again, `azd deploy`
+> Microsoft Teams agent uses REST scripts. When the extension is compatible again, `azd deploy`
 > against `azure.yaml` becomes an option.
 
 ## Demo it
