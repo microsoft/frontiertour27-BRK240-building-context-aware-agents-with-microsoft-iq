@@ -10,7 +10,7 @@
 
 ### Session Description
 
-With no shared context, agents make wrong decisions. This session shows how the **Microsoft IQ platform** — **Foundry IQ**, **Fabric IQ**, **Work IQ**, and **Web IQ** — grounds a single agent in real enterprise context so it can reason and act reliably. You'll build **Caldova's supplier-assurance agent**: a context-aware **Agent 365 autopilot** grounded across all four IQs on **Caldova's own supplier performance, contract, and policy data**.
+With no shared context, agents make wrong decisions. This session shows how the **Microsoft IQ platform** — **Foundry IQ**, **Fabric IQ**, **Work IQ**, and **Web IQ** — grounds a single agent in real enterprise context so it can reason and act reliably. You'll build **Caldova's supplier-assurance agent**: a context-aware **agent with identity**, governed by **Agent 365** and grounded across all four IQs on **Caldova's own supplier performance, contract, and policy data**.
 
 > **Storyline:** This is Chapter 01 — *"Ground"* — of the FY27 **Caldova** "Amplify Your Intelligence" narrative. Caldova is a global pharmaceutical company mid AI-transformation (the FY27 successor to Zava). The agent is grounded across **Web · Fabric · Foundry · Work IQ**, then the *same* IQ backbone powers the next agent with no new connectors.
 
@@ -34,7 +34,7 @@ By the end of this session, you will be able to:
 
 - Explain the four Microsoft IQs and the distinct enterprise context each provides to an agent.
 - Wire Foundry IQ, Fabric IQ, Work IQ, and Web IQ into a single hosted agent as project-connection tools on the Responses API.
-- Deploy the agent as a governed **Agent 365 autopilot** (digital worker) with its own identity, on-behalf-of auth, and observability.
+- Deploy an **agent with identity**, governed by **Agent 365**, with on-behalf-of auth and observability.
 
 ### 🧩 The four IQs in this demo
 
@@ -49,7 +49,7 @@ By the end of this session, you will be able to:
 
 - [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/) — hosted agents (Responses API)
 - [Microsoft IQ](https://aka.ms/microsoft-iq) — Foundry IQ, Fabric IQ, Work IQ, Web IQ
-- [Microsoft Agent 365](https://aka.ms/agent365) — autopilot (digital worker) identity & governance
+- [Microsoft Agent 365](https://aka.ms/agent365) — identity & governance for agents with identity
 - [Microsoft Fabric](https://learn.microsoft.com/fabric/) — data agent + OneLake
 - [Azure Developer CLI (`azd`)](https://learn.microsoft.com/azure/developer/azure-developer-cli/)
 
