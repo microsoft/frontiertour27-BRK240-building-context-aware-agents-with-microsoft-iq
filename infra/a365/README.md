@@ -1,10 +1,10 @@
-# Publish `caldova-supply-autopilot` as an Agent 365 autopilot (digital worker)
+# Publish `caldova-supply-autopilot` as an agent with identity
 
 The hosted agent is built and created by the **deploy** step
 (`scripts/post-provision.ps1`, run by `azd provision`). These scripts perform the
 separate **Agent 365 registration** on top of the already-deployed agent, so it
-shows up in the **Agent 365 registry** and can be hired as a digital worker in
-Microsoft Teams. This mirrors the iqdeepdive autopilot's `infra/a365` flow.
+shows up in the **Agent 365 registry** and can be hired in
+Microsoft Teams. This mirrors the iqdeepdive agent's `infra/a365` flow.
 
 ## Model: auto-create blueprint
 
@@ -33,7 +33,7 @@ Web IQ and Foundry IQ resolve under the agent's **app identity**. **Work IQ** an
 **Fabric IQ** are user-delegated, so the agent forwards an **agentic-user OBO token**
 (exchanged for `https://ai.azure.com`) as the top-level Responses bearer. For that
 exchange to succeed, `create-blueprintsp-oauth2-grants.ps1` grants the blueprint SP
-(admin consent, `AllPrincipals`) the delegated scopes a working autopilot blueprint
+(admin consent, `AllPrincipals`) the delegated scopes a working agent identity blueprint
 holds:
 
 | Resource | Scopes | Enables |

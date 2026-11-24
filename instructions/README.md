@@ -1,7 +1,7 @@
-# Attendee instructions — Caldova Supply Autopilot
+# Attendee instructions — Caldova Supply Agent
 
-Step-by-step guidance to build, deploy, and explore the **Caldova Supply Autopilot**:
-a context-aware **Agent 365 autopilot** grounded across all four Microsoft IQs.
+Step-by-step guidance to build, deploy, and explore the **Caldova Supply Agent**:
+a context-aware **agent with identity**, governed by **Agent 365** and grounded across all four Microsoft IQs.
 
 > Prefer to follow the live session? These same steps back the on-stage demos in
 > [`../delivery-resources/demos/README.md`](../delivery-resources/demos/README.md).

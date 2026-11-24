@@ -1,6 +1,6 @@
 # Data — Caldova supplier corpus
 
-Canonical synthetic data for the **Caldova Supply Autopilot**. The agent grounds in this
+Canonical synthetic data for the **Caldova Supply Agent**. The agent grounds in this
 data across the four IQs. The scenario is **CMO (contract manufacturer) supplier
 assurance**: qualifying suppliers, tracking their performance, and handling a cold-chain
 escalation.

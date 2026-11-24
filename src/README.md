@@ -1,7 +1,7 @@
 # Source
 
-The **Caldova supply-assurance agent** — a Foundry **hosted** Agent 365 autopilot that calls the
-Azure OpenAI **Responses API** and attaches the four Microsoft IQs as project-connection tools.
+The **Caldova supply-assurance agent** is a **Foundry Hosted Agent**, governed by Agent 365.
+It calls the Azure OpenAI **Responses API** and attaches the four Microsoft IQs as project-connection tools.
 
 ## Layout
 

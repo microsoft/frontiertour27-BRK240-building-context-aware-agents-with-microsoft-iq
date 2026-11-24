@@ -1,13 +1,13 @@
-# Setup — deploy the Caldova Supply Autopilot
+# Setup — deploy the Caldova Supply Agent
 
 > A **hosted** Foundry agent, wired to all **four IQs**, deployed with Azure
-> Developer CLI and published as an **Agent 365 autopilot** (digital worker).
+> Developer CLI and published as an **agent with identity**, governed by Agent 365.
 >
 > The agent code calls the Responses API and attaches the IQ tools inline — there is
 > **no prompt agent to create and wrap**. It targets the agent name
 > `caldova-supply-autopilot`.
 
-> **Two agents in this repo.** This guide deploys the **Teams autopilot**
+> **Two agents in this repo.** This guide deploys the **Caldova Supply Agent in Microsoft Teams**
 > (`caldova-supply-autopilot`). For the **Foundry portal Playground** agent
 > (`caldova-supply-hosted-agent`) used in Demos 1–2, see
 > [`../src/foundry-hosted-agent/README.md`](../src/foundry-hosted-agent/README.md).
@@ -246,8 +246,8 @@ channel. This runs **after** deploy because the blueprint id doesn't exist until
 
 ### 5️⃣ Publish to your organization (registration)
 
-`infra/a365/publish-digital-worker.ps1` publishes the agent to Microsoft 365 as a hireable digital
-worker, then the OAuth2 grants + blueprint-owner scripts finish the setup.
+`infra/a365/publish-digital-worker.ps1` publishes the agent to Microsoft 365 so it can be
+hired, then the OAuth2 grants + blueprint-owner scripts finish the setup.
 
 > **⚠️ Important:** The agent requires [admin approval](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/review-admin-consent-requests#review-and-take-action-on-admin-consent-requests-1) before becoming available for hiring. See [infra/a365/README.md](../infra/a365/README.md).
 
